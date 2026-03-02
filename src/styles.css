@@ -1,5 +1,97 @@
 /* styles.css */
 
 body {
-    background-color: rebeccapurple;
+    color: blue;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position-x: center;
+    background-color: black;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%
+}
+
+header {
+    height: 25px;
+    display: flex;
+    flex-basis: auto;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+footer {
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(120, 60, 0);
+    color: orange;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-top: 5px;
+    gap: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    text-align: justify;
+}
+
+#content {
+    background-color: rgba(155,103,60,0.9);
+    width: 600px;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 5px;
+    color: aliceblue;
+    list-style-position: inside;
+    list-style-type:none;
+}
+
+.divsHome {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    flex-shrink: auto;
+}
+
+.tableText {
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+
+.divsAboutUs {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.divsMenu{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.menuItem {
+    border: 3px solid orange; 
+    box-shadow: 0 0 20px rgb(255, 128, 0);
 }
