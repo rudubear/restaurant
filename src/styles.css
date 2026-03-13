@@ -41,6 +41,17 @@ ul {
 
 p {
     text-align: justify;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #content {
@@ -76,6 +87,7 @@ p {
     text-align: center; 
     margin-left: auto; 
     margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
