@@ -3,6 +3,14 @@ import "./styles.css";
 
 import img_restaurant_bg from "../assets/images/restaurant_background.png";
 
+import { page_load_text_home } from "./home.js";
+import { page_load_text_menu } from "./menu.js";
+import { page_load_text_about } from "./about.js";
+
+console.log(page_load_text_about);
+console.log(page_load_text_home);
+console.log(page_load_text_menu);
+
 
 const txt_logo = "Rudubear Ajisen Ramen Restaurant"
 const txt_intro = "Welcome to Rudubear's Ajisen Ramen Restaurant. Proudly serving the Toronto region for 39 years!"
