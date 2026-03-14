@@ -4,7 +4,7 @@ import "./styles.css";
 import img_restaurant_bg from "../assets/images/restaurant_background.png";
 
 import { page_load_text_home } from "./home.js";
-import { page_load_text_menu } from "./menu.js";
+import { page_load_text_menu, div_menu} from "./menu.js";
 import { page_load_text_about } from "./about.js";
 
 console.log(page_load_text_about);
@@ -37,16 +37,22 @@ function addCanvas(someElement) {
     }
 
 }
+let divContent = document.getElementById("content");
+let divBody = document.querySelector('body');
+
+console.log("testtt");
+
+divContent.appendChild(div_menu);
 
 const image_restaurant_bg = document.createElement("img");
 image_restaurant_bg.src = img_restaurant_bg;
 
 //document.body.appendChild(image_restaurant_bg);
 
-let divBody = document.querySelector('body');
+
 divBody.style.backgroundImage = `url(${img_restaurant_bg})`;
 
-let divContent = document.getElementById("content");
+
 //divContent.style.backgroundImage = `url(${img_restaurant_bg})`;
 
 //addCanvas(divContent);
