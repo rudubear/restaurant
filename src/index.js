@@ -13,55 +13,35 @@ console.log(page_load_text_home);
 console.log(page_load_text_menu);
 console.log(page_HTMLRenderer);
 
-
-const txt_logo = "Rudubear Ajisen Ramen Restaurant"
-const txt_intro = "Welcome to Rudubear's Ajisen Ramen Restaurant. Proudly serving the Toronto region for 39 years!"
-const txt_hours = "We are open Monday's to Friday 9am-5pm EST."
-
-const txt_main_dishes_ramen = "Our world class pork ramen, loved by men and women of all ages, made with our unique blend of herbs and spices with a zesty taste that is sure to satisfy your palate";
-const txt_main_dishes_miso_soup = "The best Miso Soup the working class man or woman would ask for. Warms your heart and soul";
-const txt_main_dishes_sushi = "Try our gold dragon, green dragon and black dragon, all at once!"
-
-const txt_drinks_coke = "Coca Cola";
-const txt_drinks_green_tea = "Green Tea";
-const txt_drinks_cappucino = "Cappucino";
-
-
-function addCanvas(someElement) {
-    const myCanvas = document.createElement('canvas');
-    const myCtx = myCanvas.getContext("2d");
-    myCanvas.width = 500;
-    myCtx.fillStyle = "brown";
-    myCtx.fillRect(15,15,100,100);
-
-    if(someElement) {
-        someElement.appendChild(myCanvas);
-    }
-
-}
 let divContent = document.getElementById("content");
 let divBody = document.querySelector('body');
 
-console.log("testtt");
-
-divContent.appendChild(div_menu);
-divContent.appendChild(div_aboutus);
 divContent.appendChild(div_home);
 
 const image_restaurant_bg = document.createElement("img");
 image_restaurant_bg.src = img_restaurant_bg;
-
-//document.body.appendChild(image_restaurant_bg);
-
-
 divBody.style.backgroundImage = `url(${img_restaurant_bg})`;
 
 
-//divContent.style.backgroundImage = `url(${img_restaurant_bg})`;
+const btn_home = document.getElementById("btn_Home");
+const btn_menu = document.getElementById("btn_Menu");
+const btn_about = document.getElementById("btn_About");
 
-//addCanvas(divContent);
+btn_home.addEventListener("click", (event) => {
+    console.log("home button clicked");
+    divContent.replaceChildren();
+    divContent.appendChild(div_home);
 
-console.log("huerr");
-//console.log(img_restaurant_bg);
-//console.log(image_restaurant_bg);
-console.log("test");
+});
+
+btn_menu.addEventListener("click", (event) => {
+    console.log("menu button clicked");
+    divContent.replaceChildren();
+    divContent.appendChild(div_menu);
+});
+
+btn_about.addEventListener("click", (event) => {
+    console.log("about button clicked");
+    divContent.replaceChildren();
+    divContent.appendChild(div_aboutus);
+});

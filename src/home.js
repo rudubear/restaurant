@@ -24,10 +24,11 @@ const txt_tbl_tb_wed = ["Wednesday", "9am-5pm"];
 const txt_tbl_tb_thu = ["Thursday", "9am-5pm"];
 const txt_tbl_tb_fri = ["Friday", "9am-5pm"];
 const txt_tbl_tb_sat = ["Saturday", "12pm-5pm"];
-const txt_tbl_tb_sun = ["Closed"];
+const txt_tbl_tb_sun = ["Sunday", "Closed"];
 
 let div_home = createHTMLelement_DIV("divsHome");
-let my_tbl = createHTMLelement_TABLE("tabletext");
+let my_tbl = createHTMLelement_TABLE("tableText");
+my_tbl.setAttribute("width", 400);
 let my_tbl_caption = createHTMLelement_TableCaption(txt_tbl_caption);
 let my_tbl_header_row = createHTMLelement_TableHeaders(txt_tbl_thead);
 let my_tbl_body = createHTMLelement_TableBody();
@@ -37,8 +38,8 @@ let my_tbl_body_row2 = createHTMLelement_TableRow(txt_tbl_tb_tue);
 let my_tbl_body_row3 = createHTMLelement_TableRow(txt_tbl_tb_wed);
 let my_tbl_body_row4 = createHTMLelement_TableRow(txt_tbl_tb_thu);
 let my_tbl_body_row5 = createHTMLelement_TableRow(txt_tbl_tb_fri);
-let my_tbl_body_row6 = createHTMLelement_TableRow(txt_tbl_tb_sun);
-let my_tbl_body_row7 = createHTMLelement_TableRow(txt_tbl_tb_sat);
+let my_tbl_body_row6 = createHTMLelement_TableRow(txt_tbl_tb_sat);
+let my_tbl_body_row7 = createHTMLelement_TableRow(txt_tbl_tb_sun);
 
 my_tbl_body.appendChild(my_tbl_body_row1);
 my_tbl_body.appendChild(my_tbl_body_row2);
