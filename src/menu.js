@@ -3,6 +3,7 @@
 const page_load_text_menu = "loading menu page!"
 
 import { page_load_text_menu_item, MenuItem } from "./menuitem.js";
+import { renderHTMLMenuObject } from "./renderHTML.js";
 
 import img_menuitem_sushi from "../assets/images/sushi_dragon_roll.jpeg";
 import img_menuitem_ramen from "../assets/images/ramen.jpeg";
@@ -52,39 +53,6 @@ const menu_item_dragonroll = new MenuItem(
     "The greatest dragon roll sushi to exist. It was forged in the heart of a dying star by gathering the 7 dragon balls and summoning the immortal dragon Shenron",
     "$18.99"
 )
-
-function renderHTMLMenuObject (menuItem, menuItemImageSource){
-    let listItem = document.createElement("li");
-
-    let menuItemH2 = document.createElement("h2");
-    let menuItemDescription = document.createElement("p");
-    let menuItemPrice = document.createElement("p");
-    let menuItemImage = new Image();
-    menuItemImage.src = menuItemImageSource;
-    menuItemImage.classList = "menu_item_image";    
-    
-    
-    menuItemH2.textContent = menuItem.name;
-    menuItemDescription.textContent = menuItem.description;
-    menuItemPrice.textContent = menuItem.price;
-
-    let myMenuItem = [];
-    myMenuItem.push(menuItemH2);
-    myMenuItem.push(menuItemDescription);
-    myMenuItem.push(menuItemPrice);
-    myMenuItem.push(menuItemImage);
-
-    listItem.appendChild(menuItemH2);
-    listItem.appendChild(menuItemDescription);
-    listItem.appendChild(menuItemPrice);
-    listItem.appendChild(menuItemImage);
-
-
-    return listItem ;
-
-    
-
-}
 
 ul_menuList.appendChild(renderHTMLMenuObject(menu_item_cappuccino, img_menuitem_cappuccino));
 ul_menuList.appendChild(renderHTMLMenuObject(menu_item_coke, img_menuitem_coke));

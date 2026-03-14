@@ -9,7 +9,11 @@ body {
     background-color: black;
     background-position: top;
     background-attachment: fixed;
-    width: 100%
+    width: 100%;
+}
+
+#bodyContent{
+    margin-bottom: 45px;
 }
 
 header {
@@ -18,6 +22,7 @@ header {
     flex-basis: auto;
     box-sizing: border-box;
     justify-content: center;
+    background-color: rgba(138, 62, 0, 0.9)
 }
 
 footer {
@@ -27,6 +32,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 45px;
     background-color: rgb(120, 60, 0);
     color: orange;
     font-weight: bold;
@@ -57,7 +63,7 @@ h2 {
 #content {
     background-color: rgba(155,103,60,0.9);
     width: 600px;
-    height: 100%;
+    height: 80%;
     display: flex;
     box-sizing: border-box;
     flex-basis: auto;
@@ -65,22 +71,21 @@ h2 {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    /*margin-bottom: 50px;*/
     padding: 5px;
     color: aliceblue;
     list-style-position: inside;
     list-style-type:none;
+    overflow: auto;
 }
 
 .divsHome {
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    justify-content: center;
-    flex-shrink: auto;
+    box-sizing: border-box;
 }
 
 .tableText {
@@ -95,11 +100,13 @@ h2 {
 .divsAboutUs {
     padding-left: 20px;
     padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .divsMenu{
     padding-left: 20px;
     padding-right: 20px;
+    box-sizing: border-box;
 }
 
 
