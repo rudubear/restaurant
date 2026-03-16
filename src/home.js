@@ -27,6 +27,9 @@ const txt_tbl_tb_sat = ["Saturday", "12pm-5pm"];
 const txt_tbl_tb_sun = ["Sunday", "Closed"];
 
 let div_home = createHTMLelement_DIV("divsHome");
+let p_homep1 = createHTMLelement_P(home_p1);
+let p_homep2 = createHTMLelement_P(home_p2);
+
 let my_tbl = createHTMLelement_TABLE("tableText");
 my_tbl.setAttribute("width", 400);
 let my_tbl_caption = createHTMLelement_TableCaption(txt_tbl_caption);
@@ -53,6 +56,8 @@ my_tbl.appendChild(my_tbl_caption);
 my_tbl.appendChild(my_tbl_header_row);
 my_tbl.appendChild(my_tbl_body);
 
+div_home.appendChild(p_homep1);
+div_home.appendChild(p_homep2);
 div_home.appendChild(my_tbl);
 
 
